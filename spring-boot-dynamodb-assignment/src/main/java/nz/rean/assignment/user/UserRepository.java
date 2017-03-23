@@ -34,8 +34,9 @@ public class UserRepository {
     return results;
   }
 
-  public Optional<User> read(@Email
-          @Valid
+  public Optional<User> read(
+		  //@Email
+        //  @Valid
           @RequestParam("emailId")String emailId) {
 
     log.trace("Entering read() with {}", emailId);
